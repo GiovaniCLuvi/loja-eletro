@@ -20,7 +20,7 @@ header {
 }
 
 .product {
-    background-color: #0a2754;
+    background-color: #e0c306;
     color: white;
     padding: 20px;
     margin-bottom: 40px;
@@ -54,7 +54,7 @@ header {
     .suma {display: block;}
     .peq {display: none;}
     body {
-        background-color: green;
+        background-color: rgb(214, 12, 237);
     }
     .product {
         display: grid;

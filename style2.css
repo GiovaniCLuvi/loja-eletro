@@ -1,0 +1,9 @@
+@media (max-width: 700px) {
+    .suma{display: none;}
+    #fica{display: block;}
+  }
+
+section#back {
+  background-image: url(Imagens/air1.jpg);
+}
+  

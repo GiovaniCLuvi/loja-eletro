@@ -1,0 +1,284 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+}
+
+.productr {
+    text-align: right;
+    float: right;
+}
+
+.productl {
+    float: left;
+}
+
+.product {
+    background-color: #0a2754;
+    color: white;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    width: 450px;
+    height: 350px;
+    font-size: 0.8em;
+}
+
+.safe {
+    display: flex;
+}
+
+  @media (max-width: 800px) {
+    .suma{display: none;}
+    .product {
+        width: 200px;
+        height: 150px;
+        font-size: 0.5em;
+    }
+    .productl {
+        padding-left: 0px;
+    }
+    .productr {
+        padding-right: 0px;
+    }
+  }
+
+@media (min-width: 800px) {
+    .safe {display: block;}
+    .suma {display: block;}
+    .peq {display: none;}
+    body {
+        background-color: green;
+    }
+    .product {
+        display: grid;
+        width: 500px;
+        height: 330px;
+        font-size: 1em;
+    }
+    .productl {
+        padding-left: 60px;
+    }
+    .productr {
+        padding-right: 60px;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    body {
+        background-color: yellow;
+    } #products{
+         margin-left: 8%; display: inline-table;
+    } .product {
+        margin-left: 40px;
+        width: 500px;
+    }
+    .productl {
+        padding-left: 0px;
+    }
+    .productr {
+        padding-right: 0px;
+    }
+  }
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#cart {
+    float: right;
+    width: 30%;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+
+#total {
+    font-weight: bold;
+}
+
+.imgr {
+    float: right;
+}
+
+.imgl {
+    float: left;
+}
+
+.imgtam {
+    width: 100px;
+    height: 100px;
+}
+
+.descit1 {
+    width: 500px;
+    height: 80px;
+}
+
+#back {
+    background-color: #45a049;
+    background-image: url(Imagens/back1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.listar {
+    display: inline-flex;
+    float: left;
+}
+
+#star {
+    margin-left: 11.5vw;
+    
+}
+#lip {
+    margin-top: 0px;
+    font-size: 0.8vw;
+}
+
+#titup {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vw;
+    padding-left: 40px;
+    float: left;
+    margin: 250px 0px 20px 0px;
+}
+
+#subtitup {
+    text-align: left;
+    padding-left: 10px;
+    margin: 0px 0px 0px 80px;
+    font-size: 1vw;
+}
+
+#testee {
+    border-top: 200px;
+}
+
+.call {
+    text-align: center;
+    padding-right: 59vw;
+}
+
+#louja {
+    background-color: black;
+    width: 100vw;
+}
+
+#princip {
+    display: grid;
+    list-style: none;
+}
+
+li>a {
+    float: left;
+    height: 120px;
+    width: 100px;
+    border: 0px;
+    margin: 0px;
+}
+
+
+
+
+
+
+.text-box {
+    margin-left: -86vw;
+    height: 40px;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5vw 11vw;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 1s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+

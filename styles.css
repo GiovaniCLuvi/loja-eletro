@@ -1,8 +1,12 @@
+* {
+    list-style: none;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ff00bb;
+    background-color: #01071c;
 }
 
 header {
@@ -19,8 +23,15 @@ header {
     float: left;
 }
 
+.productlc {
+    background-image: linear-gradient(to right, #010c33, #010c33, #01071c);
+}
+
+.productrc {
+    background-image: linear-gradient(to left, #010c33, #010c33, #01071c);
+}
+
 .product {
-    background-color: #e0c306;
     color: white;
     padding: 20px;
     margin-bottom: 40px;
@@ -47,15 +58,81 @@ header {
     .productr {
         padding-right: 0px;
     }
+
+    #nav {
+        height: 20px;
+        font-size: 0.8em;
+    }
+
+    #logo {
+        height: 150px;
+        width: 150px;
+    }
+
+    #titup {
+        font-size: 8vw;
+        text-align: center;
+        margin: 0px;
+        width: 200px;
+    }
+    
+    #subtitup {
+        font-size: 4.5vw;
+        width: 200px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    #titusub {
+        margin: 0px 0px 0px 115px;
+    }
+    
+    .call {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.019);
+        margin: 0px 0px 100px 0px;
+        font-size: 4vw;
+        position: absolute;
+        bottom: 0;
+    }
+
+    #back {
+        position: relative;
+    }
+    
+    #louja {
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    #princip {
+        display: grid;
+        margin: 60px 0px 0px 10vh;
+    }
+    
+    .bott {
+        height: 40px;
+        width: 200px;
+        font-size: 1em;
+        margin: 0px;
+    }
+
+    #star {
+        margin: 30px 0px 0px 0px;
+    }
+    #lip {
+        margin-left: 3px;
+        font-size: 3vw;
+    }
+    #prod1 {
+        margin-top: 40px;
+    }
   }
 
 @media (min-width: 800px) {
     .safe {display: block;}
     .suma {display: block;}
     .peq {display: none;}
-    body {
-        background-color: rgb(214, 12, 237);
-    }
     .product {
         display: grid;
         width: 500px;
@@ -71,9 +148,7 @@ header {
   }
 
   @media (min-width: 1400px) {
-    body {
-        background-color: yellow;
-    } #products{
+    #products{
          margin-left: 8%; display: inline-table;
     } .product {
         margin-left: 40px;
@@ -85,6 +160,61 @@ header {
     .productr {
         padding-right: 0px;
     }
+
+
+
+    #titup {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3vw;
+        padding-left: 40px;
+        float: left;
+        margin: 250px 0px 20px 0px;
+    }
+    
+    #subtitup {
+        text-align: left;
+        padding-left: 10px;
+        margin: 0px 0px 0px 80px;
+        font-size: 1vw;
+    }
+    
+    #testee {
+        border-top: 200px;
+    }
+    
+    .call {
+        text-align: center;
+        padding-right: 59vw;
+    }
+    
+    #louja {
+        background-color: black;
+        width: 100vw;
+    }
+    
+    #princip {
+        display: grid;
+        list-style: none;
+    }
+    
+    .bott {
+        float: left;
+        height: 120px;
+        width: 100px;
+        border: 0px;
+        margin: 0px;
+    }
+
+    #star {
+        margin-left: 11.5vw;
+        
+    }
+    #lip {
+        margin-top: 0px;
+        font-size: 0.8vw;
+    }
+
+    
   }
 
 button {
@@ -103,6 +233,7 @@ button:hover {
 #cart {
     float: right;
     width: 30%;
+    color: white;
 }
 
 #cart-items {
@@ -137,75 +268,20 @@ button:hover {
 }
 
 #back {
-    background-color: #45a049;
-    background-image: url(Imagens/back1.jpg);
-    background-position: center;
+    background-image: url(Imagens/back.jpg);
+    background-position: center left;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100vw;
     height: 100vh;
+    color: black;
 }
 
 .listar {
     display: inline-flex;
     float: left;
 }
-
-#star {
-    margin-left: 11.5vw;
-    
-}
-#lip {
-    margin-top: 0px;
-    font-size: 0.8vw;
-}
-
-#titup {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 3vw;
-    padding-left: 40px;
-    float: left;
-    margin: 250px 0px 20px 0px;
-}
-
-#subtitup {
-    text-align: left;
-    padding-left: 10px;
-    margin: 0px 0px 0px 80px;
-    font-size: 1vw;
-}
-
-#testee {
-    border-top: 200px;
-}
-
-.call {
-    text-align: center;
-    padding-right: 59vw;
-}
-
-#louja {
-    background-color: black;
-    width: 100vw;
-}
-
-#princip {
-    display: grid;
-    list-style: none;
-}
-
-li>a {
-    float: left;
-    height: 120px;
-    width: 100px;
-    border: 0px;
-    margin: 0px;
-}
-
-
-
-
 
 
 .text-box {

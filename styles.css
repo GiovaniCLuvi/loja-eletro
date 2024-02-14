@@ -59,40 +59,30 @@ header {
         padding-right: 0px;
     }
 
-    #nav {
-        height: 20px;
-        font-size: 0.8em;
-    }
-
     #logo {
+        margin-top: 10px;
         height: 150px;
         width: 150px;
     }
 
     #titup {
-        font-size: 8vw;
+        font-size: 30px;
         text-align: center;
         margin: 0px;
         width: 200px;
     }
     
     #subtitup {
-        font-size: 4.5vw;
+        font-size: 20px;
         width: 200px;
         margin: 20px 0px 0px 0px;
     }
 
-    #titusub {
-        margin: 0px 0px 0px 115px;
-    }
     
     .call {
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.019);
-        margin: 0px 0px 100px 0px;
-        font-size: 4vw;
-        position: absolute;
-        bottom: 0;
+        margin-top: 70px;
+        font-size: 2vh;
     }
 
     #back {
@@ -107,25 +97,24 @@ header {
     
     #princip {
         display: grid;
-        margin: 60px 0px 0px 10vh;
+        margin: 60px 0px 0px 0px;
+        justify-content: center;
+        padding: 0px;
     }
     
     .bott {
         height: 40px;
         width: 200px;
         font-size: 1em;
-        margin: 0px;
+        margin-top: 30px;
     }
 
     #star {
-        margin: 30px 0px 0px 0px;
+        margin: 30px 0px 0px 10px;
     }
     #lip {
         margin-left: 3px;
-        font-size: 3vw;
-    }
-    #prod1 {
-        margin-top: 40px;
+        font-size: 10px;
     }
   }
 
@@ -145,6 +134,86 @@ header {
     .productr {
         padding-right: 60px;
     }
+
+
+
+
+
+
+
+
+
+    #logo {
+        margin-top: 0px;
+        height: 200px;
+        width: 200px;
+    }
+
+    #titup {
+        font-size: 40px;
+        margin: 0px;
+    }
+    
+    #subtitup {
+        font-size: 15px;
+        width: 350px;
+    }
+    
+    .call {
+        font-size: 2vh;
+        margin-top: 60px;
+    }
+
+    #back {
+        position: relative;
+    }
+    
+    #louja {
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    #princip {
+        display: grid;
+        margin: 0px;
+        justify-content: center;
+        padding: 0px;
+    }
+    
+    .bott {
+        height: 20px;
+        width: 250px;
+        font-size: 0.8em;
+        margin-top: 20px;
+    }
+
+    
+
+    #star {
+        margin-left: 21%;
+    }
+
+    #star > li > img {
+        height: 25px;
+    }
+    #lip {
+        margin: 4px 0px 0px 0px;
+        font-size: 9px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
 
   @media (min-width: 1400px) {
@@ -163,59 +232,72 @@ header {
 
 
 
+    #logo {
+        margin-top: -10px;
+        height: 250px;
+        width: 250px;
+    }
+
     #titup {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 3vw;
-        padding-left: 40px;
-        float: left;
-        margin: 250px 0px 20px 0px;
+        font-size: 40px;
+        margin: 20px 0px 0px 0px;
     }
     
     #subtitup {
-        text-align: left;
-        padding-left: 10px;
-        margin: 0px 0px 0px 80px;
-        font-size: 1vw;
-    }
-    
-    #testee {
-        border-top: 200px;
+        font-size: 20px;
+        width: 450px;
     }
     
     .call {
-        text-align: center;
-        padding-right: 59vw;
+        font-size: 2.5vh;
+        margin-top: 60px;
+    }
+
+    #back {
+        position: relative;
     }
     
     #louja {
-        background-color: black;
         width: 100vw;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -30px;
     }
     
     #princip {
         display: grid;
-        list-style: none;
+        margin: 0px;
+        justify-content: center;
+        padding: 0px;
     }
     
     .bott {
-        float: left;
-        height: 120px;
-        width: 100px;
-        border: 0px;
-        margin: 0px;
+        height: 20px;
+        width: 400px;
+        font-size: 1em;
+        margin-top: 20px;
     }
 
+    
+
     #star {
-        margin-left: 11.5vw;
-        
+        margin: 20px 0px 0px 27%;
+        width: 300px;
+    }
+
+    #star > li > img {
+        height: 25px;
     }
     #lip {
-        margin-top: 0px;
-        font-size: 0.8vw;
+        font-size: 10px;
     }
 
     
   }
+
+  #products {
+    margin-top: 40px;
+}
 
 button {
     background-color: #4caf50;
@@ -234,6 +316,10 @@ button:hover {
     float: right;
     width: 30%;
     color: white;
+}
+
+.bott {
+    transform: translate(-50%, -50%);
 }
 
 #cart-items {
@@ -274,7 +360,7 @@ button:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
     color: black;
 }
 
@@ -284,10 +370,7 @@ button:hover {
 }
 
 
-.text-box {
-    margin-left: -86vw;
-    height: 40px;
-}
+
 
 .btn:link,
 .btn:visited {

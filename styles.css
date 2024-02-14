@@ -437,7 +437,13 @@ button:hover {
 }
 
 
+.suma {
+    margin: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.677);
+}
 
 
-
-
+.imgtam {
+    height: 90px;
+    width: 90px;
+}
